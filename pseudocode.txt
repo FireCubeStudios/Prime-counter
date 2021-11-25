@@ -1,0 +1,24 @@
+Int COUNT(int NUM)
+	Int COUNTER = 0
+	If NUM == 1 OR NUM < 0 
+		Return 0
+	Else if NUM > 2
+		Counter++
+	Else if NUM == 2
+	           Return 1
+	End if
+	Loop i=0 to NUM
+		If CHECKPRIME(NUM - i) == true
+			Counter++
+		End if
+	Endloop
+	Return COUNTER
+
+Boolean CHECKPRIME(int NUM)
+	Boolean ISPRIME
+	Loop i=0 to NUM / 2
+		If NUM % i == 0
+			Counter++
+		End if
+	Endloop
+Return ISPRIME
